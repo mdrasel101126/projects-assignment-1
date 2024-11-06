@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif !important;
+      }
+      * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+      }
+    </style>
+    <title>Portfolio</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark p-2 px-lg-4">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-between"
+          id="navbarTogglerDemo01"
+        >
+          <a
+            class="navbar-brand"
+            href="#"
+            ><img
+              src="/assets/icons/logo.png"
+              alt="logo"
+              style="width: 125px; height: 125px; object-fit: contain"
+          /></a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2 gap-lg-4">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fs-5 fw-bold"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fs-5 fw-bold"
+                href="#"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fs-5 fw-bold"
+                href="#"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fs-5 fw-bold"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fs-6 fw-normal px-2 py-1 bg-info rounded"
+                href="#"
+                >Resume <i class="fa-solid fa-download text-dark"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section Start -->
+      <section
+        class="px-2 px-lg-4 d-flex flex-column flex-lg-row justify-content-between align-items-center gap-5"
+        style="margin-top: 48px; height: fit-content"
+      >
+        <div>
+          <div class="text-info">
+            <h1 class="fw-bold">Hi</h1>
+            <h1 class="ms-2 fw-bold">I'M GIAS UDDIN</h1>
+          </div>
+          <p class="text-light">
+            Web Developer || React Developer || Programmer
+          </p>
+          <p
+            class="mt-5 text-light"
+            style="font-size: small; max-width: 747px"
+          >
+            I am an enthusiastic JavaScript developer with knowing some
+            framework for the frontend and the backend. I know Basic PHP and
+            MySQL but basically a MERN developer.
+          </p>
+          <div class="mt-4 d-flex flex-wrap gap-5">
+            <a href=""
+              ><img
+                src="/assets/icons/github.svg"
+                alt="github"
+            /></a>
+            <a href=""
+              ><img
+                src="/assets/icons/linkedin.svg"
+                alt="linkedin"
+            /></a>
+            <a href=""
+              ><img
+                src="/assets/icons/youtube.svg"
+                alt="youtube"
+            /></a>
+            <a
+              class="w-auto text-light fs-6 fw-normal px-2 py-1 bg-info rounded"
+              href="#"
+              >Resume <i class="fa-solid fa-download text-dark"></i
+            ></a>
+          </div>
+        </div>
+        <img
+          src="/assets/images/gias.jpg"
+          alt="gias"
+          style="max-width: 300px; width: 100%; height: 100%"
+        />
+      </section>
+      <!-- Hero Section End -->
+      <!-- Portfolio Start -->
+      <section class="px-2 px-lg-4 mt-5">
+        <h1 class="text-center text-light fs-2 fw-bold">Portfolio</h1>
+        <div class="mt-4 d-flex flex-column gap-5">
+          <div
+            class="border rounded-1 border-secondary d-flex flex-column flex-lg-row gap-4 p-2 mx-0 mx-lg-5"
+          >
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide w-100 w-lg-50 h-auto"
+              data-bs-ride="carousel"
+            >
+              <div
+                class="carousel-inner"
+                style="height: 290px"
+              >
+                <div
+                  class="carousel-item active"
+                  style="height: 290px"
+                  data-bs-interval="10000"
+                >
+                  <img
+                    src="/assets/images/travel-guru-map.png"
+                    class="d-block w-100"
+                    style="height: 290px"
+                    alt="travel-guru-map"
+                  />
+                </div>
+                <div
+                  class="carousel-item"
+                  style="height: 290px"
+                  data-bs-interval="2000"
+                >
+                  <img
+                    src="/assets/images/Travel-Search.png"
+                    class="d-block w-100"
+                    style="height: 290px"
+                    alt="Travel-Search"
+                  />
+                </div>
+                <div
+                  class="carousel-item"
+                  style="height: 290px"
+                >
+                  <img
+                    src="/assets/images/travel-guru-map.png"
+                    class="d-block w-100"
+                    style="height: 290px"
+                    alt="travel-guru-map"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="w-100 w-lg-50">
+              <div class="d-flex gap-2">
+                <h3 class="text-info fs-4 fw-bold">Online University</h3>
+                <img
+                  src="/assets/icons/svg-1.svg"
+                  alt="svg-1"
+                />
+                <img
+                  src="/assets/icons/svg-2.svg"
+                  alt="svg-2"
+                />
+              </div>
+              <p class="text-light">
+                This is Travel service Agency website.user can login via
+                Facebook sign-in,Google Sign-in and also Can Create an New
+                Account for use the want.
+              </p>
+              <p class="m-1 text-light">
+                User can Choice the perfect vehicle as he/she
+              </p>
+              <p class="m-1 text-light">
+                user also can see his/her Current location
+              </p>
+              <p class="m-1 text-light">
+                Firebase Authentication Used in this Website.
+              </p>
+              <p class="m-1 text-light">
+                Uer Can Login via (Google,Facebook,Github)also can Create
+                Account.
+              </p>
+              <div class="mt-3 d-flex gap-4 flex-wrap">
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  React
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  Firebase
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  HTML
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  CSS
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  NODE
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border rounded-1 border-secondary d-flex flex-column flex-lg-row gap-4 p-2 mx-0 mx-lg-5"
+          >
+            <div
+              id="carouselExampleInterval-2"
+              class="carousel slide w-100 w-lg-50 h-auto"
+              data-bs-ride="carousel"
+            >
+              <div
+                class="carousel-inner"
+                style="height: 290px"
+              >
+                <div
+                  class="carousel-item active"
+                  style="height: 290px"
+                  data-bs-interval="10000"
+                >
+                  <img
+                    src="/assets/images/travel-guru-map.png"
+                    class="d-block w-100"
+                    style="height: 290px"
+                    alt="travel-guru-map"
+                  />
+                </div>
+                <div
+                  class="carousel-item"
+                  style="height: 290px"
+                  data-bs-interval="2000"
+                >
+                  <img
+                    src="/assets/images/Travel-Search.png"
+                    class="d-block w-100"
+                    style="height: 290px"
+                    alt="Travel-Search"
+                  />
+                </div>
+                <div
+                  class="carousel-item"
+                  style="height: 290px"
+                >
+                  <img
+                    src="/assets/images/travel-guru-map.png"
+                    class="d-block w-100"
+                    style="height: 290px"
+                    alt="travel-guru-map"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval-2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval-2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="w-100 w-lg-50">
+              <div class="d-flex gap-2">
+                <h3 class="text-info fs-4 fw-bold">Online University</h3>
+                <img
+                  src="/assets/icons/svg-1.svg"
+                  alt="svg-1"
+                />
+                <img
+                  src="/assets/icons/svg-2.svg"
+                  alt="svg-2"
+                />
+              </div>
+              <p class="text-light">
+                This is Travel service Agency website.user can login via
+                Facebook sign-in,Google Sign-in and also Can Create an New
+                Account for use the want.
+              </p>
+              <p class="m-1 text-light">
+                User can Choice the perfect vehicle as he/she
+              </p>
+              <p class="m-1 text-light">
+                user also can see his/her Current location
+              </p>
+              <p class="m-1 text-light">
+                Firebase Authentication Used in this Website.
+              </p>
+              <p class="m-1 text-light">
+                Uer Can Login via (Google,Facebook,Github)also can Create
+                Account.
+              </p>
+              <p class="m-1 text-light">
+                Uer Can Login via (Google,Facebook,Github)also can Create
+                Account.
+              </p>
+              <p class="m-1 text-light">
+                Uer Can Login via (Google,Facebook,Github)also can Create
+                Account.
+              </p>
+              <p class="m-1 text-light">
+                Uer Can Login via (Google,Facebook,Github)also can Create
+                Account.
+              </p>
+              <div class="mt-3 d-flex gap-4 flex-wrap">
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  React
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  Firebase
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  HTML
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  CSS
+                </button>
+                <button
+                  class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+                >
+                  NODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio End -->
+      <!-- About Starr -->
+      <section
+        class="px-2 px-lg-4 mt-5 mx-0 mx-lg-5 d-flex flex-column flex-lg-row gap-4 justify-content-between align-items-center"
+      >
+        <div class="w-100 w-lg-50 d-flex flex-column gap-5">
+          <!-- Expertise -->
+          <div>
+            <h3 class="text-light fs-3 fw-medium">Expertise:</h3>
+            <div class="mt-3 d-flex flex-wrap gap-3">
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                React
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Javascript
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                node.js
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Firebase
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Express.js
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                HTML
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                bootstrap
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                MongoDB
+              </button>
+            </div>
+          </div>
+          <!-- Comfortable -->
+          <div>
+            <h3 class="text-light fs-3 fw-medium">Comfortable:</h3>
+            <div class="mt-3 d-flex flex-wrap gap-3">
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                SQL
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Redux
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Socket.io
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                AWS
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Docker
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                TypeScript
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Next.js
+              </button>
+            </div>
+          </div>
+          <!-- Familiar -->
+          <div>
+            <h3 class="text-light fs-3 fw-medium">Familiar:</h3>
+            <div class="mt-3 d-flex flex-wrap gap-3">
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                C++
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Python
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Spring Boot
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Networking
+              </button>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div>
+            <h3 class="text-light fs-3 fw-medium">Tools:</h3>
+            <div class="mt-3 d-flex flex-wrap gap-3">
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Vs Code
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                JIRA
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Trello
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Git
+              </button>
+              <button
+                class="w-auto bg-secondary text-light rounded-2 px-2 py-1"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="w-100 w-lg-50">
+          <h2 class="text-center fs-2 fw-bold text-info">My Education</h2>
+          <h4 class="mt-3 text-light fs-5 text-center fw-medium">
+            B.Sc in Software Engineering,
+          </h4>
+          <h4 class="text-light fs-5 text-center fw-medium">
+            Yunnan University ( Kunming,Yunnan,China )
+          </h4>
+          <h6 class="text-light fs-6 fw-normal text-center opacity-75 mt-2">
+            2018-2022
+          </h6>
+        </div>
+      </section>
+      <!-- About End -->
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
